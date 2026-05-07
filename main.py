@@ -28,7 +28,7 @@ for hour_data in weather_data["list"]:
 if will_rain:
     client = Client(account_sid, auth_token)
     message = client.messages.create(
-        body="It is going to rain today. Remember to bring an umbrella!.",
+        body="It is going to rain today. Remember to bring an ☂️!.",
         from_= os.environ.get("MY_TWILIO_VIRTUAL_NUMBER"),
         to= os.environ.get("MY_TWILIO_VERIFIED_NUMBER"),
     )
